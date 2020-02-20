@@ -6,12 +6,12 @@
 ***
 >작업일자(아래): 20200221(예정)
 ### 연동 SW 점검 1. /egovSampleList.do와 삭제는 정상인데, 등록/수정에서 문제가 있음.
-- 확인예정
+- 작업예정
 
 >작업일자(아래): 20200220
 ### 연동 SW 점검 1. 표준프레임웍으로 구성된 프로젝트(게시판)을 CMS솔루션에 적용 특이사항.
 - 결과확인 URL: http://도메인/egovSampleList.do
-'''xml
+```xml
 context-datasource.xml파일에서 아래 내용 추가
 <!-- hsql -->
 <jdbc:embedded-database id="dataSource-hsql" type="HSQL">
@@ -21,8 +21,9 @@ context-datasource.xml파일에서 아래 내용 추가
 sampledb.sql 내용 중에서 IDS는 기존값과 중복되기 때문에 제거
 CREATE MEMORY TABLE IDS(TABLE_NAME VARCHAR(16) NOT NULL PRIMARY KEY,NEXT_ID DECIMAL(30) NOT NULL)
 INSERT INTO IDS VALUES('SAMPLE',115)
-'''
-ScreenShot<br>
+```
+
+###[ScreenShot]<br>
 ![ex_screenshot](./git_img/20200221.jpg)
 ![ex_screenshot](./git_img/20200221_2.jpg)
 
