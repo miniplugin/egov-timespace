@@ -5,8 +5,23 @@
 [라이센스 보기](https://www.egovframe.go.kr/EgovLicense.jsp)
 ***
 >작업일자(아래): 20200221(예정)
-### 연동 SW 점검 1. /egovSampleList.do와 삭제는 정상인데, 등록/수정에서 문제가 있음.
-- 작업예정
+### 연동 SW 점검 1. 작업한 CMS에서 Sample프로젝트 CRUD 연동검사 OK.
+- sample 프로젝트에서 validator폴더 추가.
+- context-validator.xml에서 Sample용 밸리데이터 설정 추가.
+```xml
+<bean id="validatorFactory" class="org.springmodules.validation.commons.DefaultValidatorFactory">
+    <property name="validationConfigLocations">
+        <list>
+            <!-- 경량환경 템플릿 밸리데이터 설정 -->
+            <value>classpath:/egovframework/validator/validator-rules-let.xml</value>
+            <value>classpath:/egovframework/validator/let/**/*.xml</value>
+            <!-- Sample용 밸리데이터 설정 추가 -->
+            <value>/WEB-INF/config/egovframework/validator/validator-rules.xml</value>
+            <value>/WEB-INF/config/egovframework/validator/validator.xml</value>
+        </list>
+    </property>
+</bean>
+```
 
 >작업일자(아래): 20200220
 ### 연동 SW 점검 1. 표준프레임웍으로 구성된 프로젝트(게시판)을 CMS솔루션에 적용 특이사항.
