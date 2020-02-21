@@ -38,7 +38,7 @@ CREATE MEMORY TABLE IDS(TABLE_NAME VARCHAR(16) NOT NULL PRIMARY KEY,NEXT_ID DECI
 INSERT INTO IDS VALUES('SAMPLE',115)
 ```
 
-### [ScreenShot 아래 1)번부터 6)번가지 실행했음.]<br>
+### [ScreenShot 아래 1)번 부터 ~ 7)번 까지 실행했음.]<br>
 ![ex_screenshot](./git_img/20200221.jpg)
 ![ex_screenshot](./git_img/20200221_2.jpg)
 
