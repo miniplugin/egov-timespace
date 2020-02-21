@@ -9,7 +9,7 @@
 	<configs>
 	</configs>
 	<autoconfigs>
-		<config>src/main/webapp/WEB-INF/config/framework/springmvc/com-servlet.xml</config>
+		<config>src/main/webapp/WEB-INF/config/egovframework/springmvc/com-servlet.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
