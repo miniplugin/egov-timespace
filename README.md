@@ -6,7 +6,7 @@
 ***
 >작업일자(아래): 20200221(예정)
 ### 연동 SW 점검 1. 작업한 CMS에서 Sample프로젝트 CRUD 연동검사 OK.
-- sample 프로젝트에서 validator폴더 추가.
+- sample 프로젝트에서 validator폴더복사해서 CMS프로젝트에 추가.
 - context-validator.xml에서 Sample용 밸리데이터 설정 추가.
 ```xml
 <bean id="validatorFactory" class="org.springmodules.validation.commons.DefaultValidatorFactory">
