@@ -35,7 +35,7 @@ context-datasource.xml파일에서 아래 내용 추가
 </jdbc:embedded-database>
 sampledb.sql 내용 중에서 IDS는 기존값과 중복되기 때문에 제거
 CREATE MEMORY TABLE IDS(TABLE_NAME VARCHAR(16) NOT NULL PRIMARY KEY,NEXT_ID DECIMAL(30) NOT NULL)
-INSERT INTO IDS VALUES('SAMPLE',115)
+SET SCHEMA PUBLIC
 ```
 
 ### [ScreenShot 아래 1)번 부터 ~ 7)번 까지 실행했음.]<br>
