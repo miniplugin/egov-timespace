@@ -1,4 +1,4 @@
-package timespace.miniplugin.com;
+package timespace.com.cmm.util;
 
 import java.util.Map;
 import java.util.UUID;
