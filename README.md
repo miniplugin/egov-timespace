@@ -4,10 +4,12 @@
 표준프레임워크 내에서 사용된 외부 오픈소스의 경우 원 오픈소스의 라이선스 정책을 유지합니다.
 [라이센스 보기](https://www.egovframe.go.kr/EgovLicense.jsp)
 ***
->작업일자(아래): 20200221(예정)
-### 연동 SW 점검 1. 작업한 CMS에서 Sample프로젝트 CRUD 연동검사 OK.
+>작업일자(아래): 20200221
+### 연동 SW 점검 2. egov sht프로젝트에서 -> CMS프로젝트 CRUD 연동검사 예정.
+- 결과확인 URL: http://도메인/main/template/mainPage.do
+### 연동 SW 점검 1. 작업한 CMS에서 -> egov Sample프로젝트 CRUD 연동검사 OK.
 - sample 프로젝트에서 validator폴더복사해서 CMS프로젝트에 추가.
-- context-validator.xml에서 Sample용 밸리데이터 설정 추가.
+- context-validator.xml에서 Sample용 밸리데이터 설정 추가.(아래 스크린샷에서 7번에 딸린작업)
 ```xml
 <bean id="validatorFactory" class="org.springmodules.validation.commons.DefaultValidatorFactory">
     <property name="validationConfigLocations">
@@ -27,10 +29,10 @@
 ### 연동 SW 점검 1. 표준프레임웍으로 구성된 프로젝트(게시판)을 CMS솔루션에 적용 특이사항.
 - 결과확인 URL: http://도메인/egovSampleList.do
 ```xml
-context-datasource.xml파일에서 아래 내용 추가
+context-datasource.xml파일에서 아래 내용 추가(아래 스크린샷에서 2번에 딸린작업)
 <!-- hsql -->
 <jdbc:embedded-database id="dataSource-hsql" type="HSQL">
-	<jdbc:script location= "classpath:/db/timespace_hsql.sql"/>
+	<jdbc:script location= "classpath:/db/shtdb.sql"/>
 	<jdbc:script location= "classpath:/db/sampledb.sql"/><!-- 이부분 추가 -->
 </jdbc:embedded-database>
 sampledb.sql 내용 중에서 IDS는 기존값과 중복되기 때문에 제거
@@ -42,6 +44,5 @@ SET SCHEMA PUBLIC
 ![ex_screenshot](./git_img/20200221.jpg)
 ![ex_screenshot](./git_img/20200221_2.jpg)
 
-### Egov시작 클래스명 변경.
-- egovframework.rte. 유지.
-- egovframework.com. , egovframework.let. 일괄변경 framework.com. framework.let.   
+### 추가한 패키지명 변경.
+- 추가한 패키지 egov... 으로 시작 -> 추가한 패키지 timespace... 으로 시작  

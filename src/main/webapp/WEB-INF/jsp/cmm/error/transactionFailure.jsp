@@ -30,7 +30,7 @@ function fncGoAfterErrorPage(){
           <tr>
             <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="left"><img src="<c:url value='/images/framework/com/cmm/er_logo.jpg' />" width="379" height="57" /></td>
+                <td align="left"><img src="<c:url value='/images/egovframework/com/cmm/er_logo.jpg' />" width="379" height="57" /></td>
               </tr>
               <tr>
                 <td><br />
@@ -39,7 +39,7 @@ function fncGoAfterErrorPage(){
               <tr>
                 <td align="center"><table width="520" border="0" cellspacing="2" cellpadding="2">
                   <tr>
-                    <td width="74" rowspan="2" align="center"><img src="<c:url value='/images/framework/com/cmm/danger.jpg' />" width="74" height="74" /></td>
+                    <td width="74" rowspan="2" align="center"><img src="<c:url value='/images/egovframework/com/cmm/danger.jpg' />" width="74" height="74" /></td>
                     <td width="399" align="left" class="lt_text2">트랜젝션 수행중 오류가 발생하였습니다. </td>
                   </tr>
                 </table>
@@ -51,7 +51,7 @@ function fncGoAfterErrorPage(){
                   <br /></td>
               </tr>
               <tr>
-                <td align="center"><a href="javascript:fncGoAfterErrorPage();"><img src="<c:url value='/images/framework/com/cmm/go_history.jpg' />" width="90" height="29" /></a></td>
+                <td align="center"><a href="javascript:fncGoAfterErrorPage();"><img src="<c:url value='/images/egovframework/com/cmm/go_history.jpg' />" width="90" height="29" /></a></td>
               </tr>
             </table>
               <br /></td>

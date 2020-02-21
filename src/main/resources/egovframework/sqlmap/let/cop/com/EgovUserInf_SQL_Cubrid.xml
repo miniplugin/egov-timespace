@@ -4,9 +4,9 @@
 <sqlMap namespace="EgovUserInfManageDAO">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="UserInfVO" type="framework.let.cop.com.service.UserInfVO"/>
+	<typeAlias  alias="UserInfVO" type="egovframework.let.cop.com.service.UserInfVO"/>
 
-	<resultMap id="UserInfs" class="framework.let.cop.com.service.UserInfVO">
+	<resultMap id="UserInfs" class="egovframework.let.cop.com.service.UserInfVO">
 		<result property="uniqId" column="ESNTL_ID" columnIndex="1"/>
 		<result property="userId" column="USER_ID" columnIndex="2"/>
 		<result property="userNm" column="USER_NM" columnIndex="3"/>
@@ -15,7 +15,7 @@
 		<result property="userEmail" column="USER_EMAIL" columnIndex="6"/>
 	</resultMap>
 	
-	<resultMap id="UserInfList" class="framework.let.cop.com.service.UserInfVO">
+	<resultMap id="UserInfList" class="egovframework.let.cop.com.service.UserInfVO">
 		<result property="uniqId" column="ESNTL_ID" columnIndex="1"/>
 		<result property="userId" column="USER_ID" columnIndex="2"/>
 		<result property="userNm" column="USER_NM" columnIndex="3"/>
@@ -26,7 +26,7 @@
 		<result property="deletedAt" column="DELETED_AT" columnIndex="8"/>
 	</resultMap>
 	
-	<resultMap id="AllUserInfList" class="framework.let.cop.com.service.UserInfVO">
+	<resultMap id="AllUserInfList" class="egovframework.let.cop.com.service.UserInfVO">
 		<result property="uniqId" column="ESNTL_ID" columnIndex="1"/>
 		<result property="trgetId" column="TRGET_ID" columnIndex="2"/>
 	</resultMap>	

@@ -4,10 +4,10 @@
 <sqlMap namespace="BBSMaster">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="BoardMasterVO" type="framework.let.cop.bbs.service.BoardMasterVO"/>
-	<typeAlias  alias="BoardMaster" type="framework.let.cop.bbs.service.BoardMaster"/>
+	<typeAlias  alias="BoardMasterVO" type="egovframework.let.cop.bbs.service.BoardMasterVO"/>
+	<typeAlias  alias="BoardMaster" type="egovframework.let.cop.bbs.service.BoardMaster"/>
 
-	<resultMap id="boardMasterList" class="framework.let.cop.bbs.service.BoardMasterVO">
+	<resultMap id="boardMasterList" class="egovframework.let.cop.bbs.service.BoardMasterVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="bbsTyCode" column="BBS_TY_CODE" columnIndex="2"/>
 		<result property="bbsTyCodeNm" column="BBS_TY_CODE_NM" columnIndex="3"/>
@@ -19,7 +19,7 @@
 		<result property="frstRegisterPnttm" column="FRST_REGIST_PNTTM" columnIndex="9"/>
 	</resultMap>
 
-	<resultMap id="boardMasterDetail" class="framework.let.cop.bbs.service.BoardMasterVO">
+	<resultMap id="boardMasterDetail" class="egovframework.let.cop.bbs.service.BoardMasterVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="bbsTyCode" column="BBS_TY_CODE" columnIndex="2"/>
 		<result property="bbsAttrbCode" column="BBS_ATTRB_CODE" columnIndex="3"/>
@@ -40,7 +40,7 @@
 		<result property="tmplatCours" column="TMPLAT_COURS" columnIndex="18"/>
 	</resultMap>
 
-	<resultMap id="boardMasterAll" class="framework.let.cop.bbs.service.BoardMasterVO">
+	<resultMap id="boardMasterAll" class="egovframework.let.cop.bbs.service.BoardMasterVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="bbsTyCode" column="BBS_TY_CODE" columnIndex="2"/>
 		<result property="bbsAttrbCode" column="BBS_ATTRB_CODE" columnIndex="3"/>

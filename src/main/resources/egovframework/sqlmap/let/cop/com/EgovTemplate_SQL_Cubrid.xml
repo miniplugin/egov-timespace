@@ -4,10 +4,10 @@
 <sqlMap namespace="TemplateMng">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="TemplateInf" type="framework.let.cop.com.service.TemplateInf"/>
-	<typeAlias  alias="TemplateInfVO" type="framework.let.cop.com.service.TemplateInfVO"/>
+	<typeAlias  alias="TemplateInf" type="egovframework.let.cop.com.service.TemplateInf"/>
+	<typeAlias  alias="TemplateInfVO" type="egovframework.let.cop.com.service.TemplateInfVO"/>
 
-	<resultMap id="tmplatList" class="framework.let.cop.com.service.TemplateInfVO">
+	<resultMap id="tmplatList" class="egovframework.let.cop.com.service.TemplateInfVO">
 		<result property="tmplatId" column="TMPLAT_ID" columnIndex="1"/>
 		<result property="tmplatNm" column="TMPLAT_NM" columnIndex="2"/>
 		<result property="tmplatSeCode" column="TMPLAT_SE_CODE" columnIndex="3"/>
@@ -17,7 +17,7 @@
 		<result property="frstRegisterPnttm" column="FRST_REGIST_PNTTM" columnIndex="7"/>
 	</resultMap>
 
-	<resultMap id="tmplatDetail" class="framework.let.cop.com.service.TemplateInfVO">
+	<resultMap id="tmplatDetail" class="egovframework.let.cop.com.service.TemplateInfVO">
 		<result property="tmplatId" column="TMPLAT_ID" columnIndex="1"/>
 		<result property="tmplatNm" column="TMPLAT_NM" columnIndex="2"/>
 		<result property="tmplatSeCode" column="TMPLAT_SE_CODE" columnIndex="3"/>

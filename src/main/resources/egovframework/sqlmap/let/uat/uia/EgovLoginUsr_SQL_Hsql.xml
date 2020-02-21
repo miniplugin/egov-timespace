@@ -4,10 +4,10 @@
 <sqlMap namespace="LoginUsr">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="loginVO" type="framework.com.cmm.LoginVO"/>
+	<typeAlias  alias="loginVO" type="egovframework.com.cmm.LoginVO"/>
 
 	<!-- 로그인 처리를 위한 resultMap -->
-	<resultMap id="login" class="framework.com.cmm.LoginVO">
+	<resultMap id="login" class="egovframework.com.cmm.LoginVO">
 		<result property="id" column="id" columnIndex="1"/>
 		<result property="name" column="name" columnIndex="2"/>
 		<result property="ihidNum" column="ihidNum" columnIndex="3"/>
@@ -19,12 +19,12 @@
 	</resultMap>
 	
 	<!-- 아이디 찾기를 위한 resultMap 
-	<resultMap id="id" class="framework.com.cmm.LoginVO">
+	<resultMap id="id" class="egovframework.com.cmm.LoginVO">
 		<result property="id" column="id" columnIndex="1"/>
 	</resultMap>
 	-->
 	<!-- 비밀번호 처리를 위한 resultMap 
-	<resultMap id="password" class="framework.com.cmm.LoginVO">
+	<resultMap id="password" class="egovframework.com.cmm.LoginVO">
 		<result property="password" column="password" columnIndex="1"/>
 	</resultMap>
 	-->

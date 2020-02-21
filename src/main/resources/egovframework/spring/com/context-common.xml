@@ -5,14 +5,14 @@
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
     <!-- component-scan 설정-->
-	<context:component-scan base-package="egovframework,framework">
+	<context:component-scan base-package="egovframework,timespace">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 	
 	<!-- 메시지소스빈 설정 -->
-    <bean id="egovMessageSource" class="framework.com.cmm.EgovMessageSource">
+    <bean id="egovMessageSource" class="egovframework.com.cmm.EgovMessageSource">
         <property name="reloadableResourceBundleMessageSource">
             <ref bean="messageSource" />
         </property> 
@@ -59,10 +59,10 @@
 	<!-- Exception 발생시 후처리용 별도작업을 위해 실행환경의  AntPathMatcher 를 활용하도록 설정 -->
 	<bean id="antPathMater" class="org.springframework.util.AntPathMatcher" />
     <!-- Exception 발생시 후처리용 별도작업을 위해 실행환경의  DefaultTraceHandler 를 활용하도록 설정 egovframework.rte.fdl.cmmn.trace.handler.DefaultTraceHandler -->
-    <bean id="defaultTraceHandler" class="framework.com.cmm.EgovComTraceHandler" />
+    <bean id="defaultTraceHandler" class="egovframework.com.cmm.EgovComTraceHandler" />
 	
     <!-- For Pagination Tag 설정-->
-    <bean id="imageRenderer" class="framework.com.cmm.ImagePaginationRenderer"/>
+    <bean id="imageRenderer" class="egovframework.com.cmm.ImagePaginationRenderer"/>
     <bean id="paginationManager" class="egovframework.rte.ptl.mvc.tags.ui.pagination.DefaultPaginationManager">
         <property name="rendererType">
             <map>
@@ -78,7 +78,7 @@
         <property name="maxInMemorySize" value="100000000" />
     </bean>
     <!-- custom multi file resolver -->    
-    <bean id="local.MultiCommonsMultipartResolver" class="framework.com.cmm.web.EgovMultipartResolver">
+    <bean id="local.MultiCommonsMultipartResolver" class="egovframework.com.cmm.web.EgovMultipartResolver">
         <property name="maxUploadSize" value="100000000" />
         <property name="maxInMemorySize" value="100000000" />
     </bean>

@@ -11,12 +11,12 @@
     since    : 2011.08.31 
 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ page import="framework.com.cmm.service.EgovProperties" %>    
+<%@ page import="egovframework.com.cmm.service.EgovProperties" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<c:set var="ImgUrl" value="/images/framework/cop/bbs/"/>
+<c:set var="ImgUrl" value="/images/egovframework/cop/bbs/"/>
 <!-- common_top 시작 -->
 <c:import url="/EgovPageLink.do?link=main/template_start/inc/common_top" />
 <!-- common_top 끝 -->

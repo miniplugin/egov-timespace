@@ -12,7 +12,7 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import ="framework.com.cmm.LoginVO" %>
+<%@ page import ="egovframework.com.cmm.LoginVO" %>
 <header id="header">
 	<div class="header_area box_inner clear">	
 		<h1><a href="<c:url value='/main/template/mainPage.do' />">스프링 in EDU</a></h1>

@@ -5,10 +5,10 @@
 <sqlMap namespace="IndvdlSchdulManage">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="comDefaultVO" type="framework.com.cmm.ComDefaultVO"/>
-	<typeAlias  alias="IndvdlSchdulManageVO" type="framework.let.cop.smt.sim.service.IndvdlSchdulManageVO"/>
+	<typeAlias  alias="comDefaultVO" type="egovframework.com.cmm.ComDefaultVO"/>
+	<typeAlias  alias="IndvdlSchdulManageVO" type="egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO"/>
 
-	<resultMap id="IndvdlSchdulManage" class="framework.let.cop.smt.sim.service.IndvdlSchdulManageVO">
+	<resultMap id="IndvdlSchdulManage" class="egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO">
 		<result property="schdulId" column="SCHDUL_ID" columnIndex="1"/>
 		<result property="schdulSe" column="SCHDUL_SE" columnIndex="2"/>
 		<result property="schdulDeptId" column="SCHDUL_DEPT_ID" columnIndex="3"/>

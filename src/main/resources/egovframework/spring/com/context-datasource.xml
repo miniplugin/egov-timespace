@@ -24,7 +24,7 @@
     
 	<!-- hsql -->
     <jdbc:embedded-database id="dataSource-hsql" type="HSQL">
-		<jdbc:script location= "classpath:/db/timespace_hsql.sql"/>
+		<jdbc:script location= "classpath:/db/shtdb.sql"/>
 		<jdbc:script location= "classpath:/db/sampledb.sql"/>
 	</jdbc:embedded-database>
 	

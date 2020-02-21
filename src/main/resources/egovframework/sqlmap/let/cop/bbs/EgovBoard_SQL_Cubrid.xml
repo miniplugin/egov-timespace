@@ -4,10 +4,10 @@
 <sqlMap namespace="Board">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="Board" type="framework.let.cop.bbs.service.Board"/>
-	<typeAlias  alias="BoardVO" type="framework.let.cop.bbs.service.BoardVO"/>
+	<typeAlias  alias="Board" type="egovframework.let.cop.bbs.service.Board"/>
+	<typeAlias  alias="BoardVO" type="egovframework.let.cop.bbs.service.BoardVO"/>
 
-	<resultMap id="boardList" class="framework.let.cop.bbs.service.BoardVO">
+	<resultMap id="boardList" class="egovframework.let.cop.bbs.service.BoardVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="nttId" column="NTT_ID" columnIndex="2"/>
 		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>
@@ -24,7 +24,7 @@
 		<result property="ntceEndde" column="NTCE_ENDDE" columnIndex="14"/>
 	</resultMap>
 
-	<resultMap id="boardDetail" class="framework.let.cop.bbs.service.BoardVO">
+	<resultMap id="boardDetail" class="egovframework.let.cop.bbs.service.BoardVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="nttId" column="NTT_ID" columnIndex="2"/>
 		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>	
@@ -53,7 +53,7 @@
 		<result property="bbsNm" column="BBS_NM" columnIndex="25"/>
 	</resultMap>
 
-	<resultMap id="sortList" class="framework.let.cop.bbs.service.BoardVO">
+	<resultMap id="sortList" class="egovframework.let.cop.bbs.service.BoardVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="nttId" column="NTT_ID" columnIndex="2"/>
 		<result property="sortOrdr" column="SORT_ORDR" columnIndex="3"/>
@@ -62,7 +62,7 @@
 		<result property="replyLc" column="ANSWER_LC" columnIndex="6"/>
 	</resultMap>
 
-	<resultMap id="guestList" class="framework.let.cop.bbs.service.BoardVO">
+	<resultMap id="guestList" class="egovframework.let.cop.bbs.service.BoardVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="nttId" column="NTT_ID" columnIndex="2"/>
 		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>

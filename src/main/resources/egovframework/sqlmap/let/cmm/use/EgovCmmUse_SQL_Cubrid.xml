@@ -4,9 +4,9 @@
 <sqlMap namespace="CmmUse">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="ComDefaultCodeVO" type="framework.com.cmm.ComDefaultCodeVO"/>
+	<typeAlias  alias="ComDefaultCodeVO" type="egovframework.com.cmm.ComDefaultCodeVO"/>
 
-	<resultMap id="CmmCodeDetail" class="framework.com.cmm.service.CmmnDetailCode">
+	<resultMap id="CmmCodeDetail" class="egovframework.com.cmm.service.CmmnDetailCode">
 		<result property="codeId"    	column="CODE_ID"   	columnIndex="1"/>
 		<result property="code"  		column="CODE" 		columnIndex="2"/>
 		<result property="codeNm"   	column="CODE_NM"  	columnIndex="3"/>

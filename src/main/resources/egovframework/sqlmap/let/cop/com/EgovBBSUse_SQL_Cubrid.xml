@@ -4,10 +4,10 @@
 <sqlMap namespace="BBSUseInfoManageDAO">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="BoardUseInf" type="framework.let.cop.com.service.BoardUseInf"/>
-	<typeAlias  alias="BoardUseInfVO" type="framework.let.cop.com.service.BoardUseInfVO"/>
+	<typeAlias  alias="BoardUseInf" type="egovframework.let.cop.com.service.BoardUseInf"/>
+	<typeAlias  alias="BoardUseInfVO" type="egovframework.let.cop.com.service.BoardUseInfVO"/>
 
-	<resultMap id="BoardUseList" class="framework.let.cop.com.service.BoardUseInfVO">
+	<resultMap id="BoardUseList" class="egovframework.let.cop.com.service.BoardUseInfVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="bbsNm" column="BBS_NM" columnIndex="2"/>
 		<result property="trgetId" column="TRGET_ID" columnIndex="3"/>
@@ -23,7 +23,7 @@
 		<result property="bbsTyCode" column="BBS_TY_CODE" columnIndex="13"/>
 	</resultMap>
 	
-	<resultMap id="BoardUseListByTrget" class="framework.let.cop.com.service.BoardUseInfVO">
+	<resultMap id="BoardUseListByTrget" class="egovframework.let.cop.com.service.BoardUseInfVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 		<result property="bbsNm" column="BBS_NM" columnIndex="2"/>
 		<result property="trgetId" column="TRGET_ID" columnIndex="3"/>
@@ -35,7 +35,7 @@
 		<result property="frstRegisterPnttm" column="FRST_REGIST_PNTTM" columnIndex="9"/>
 	</resultMap>	
 	
-	<resultMap id="selectBBSUse" class="framework.let.cop.com.service.BoardUseInfVO">
+	<resultMap id="selectBBSUse" class="egovframework.let.cop.com.service.BoardUseInfVO">
 		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
 	</resultMap>
 

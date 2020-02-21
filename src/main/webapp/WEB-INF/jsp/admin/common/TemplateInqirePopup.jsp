@@ -14,7 +14,7 @@
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<c:set var="ImgUrl" value="/images/framework/admin/common/"/>
+<c:set var="ImgUrl" value="/images/egovframework/admin/common/"/>
 
 <c:import url="/EgovPageLink.do?link=admin/include/common_top" />
 

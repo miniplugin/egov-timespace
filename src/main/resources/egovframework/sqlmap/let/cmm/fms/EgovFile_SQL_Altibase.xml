@@ -4,9 +4,9 @@
 <sqlMap namespace="File">
 
 	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
-	<typeAlias  alias="FileVO" type="framework.com.cmm.service.FileVO"/>
+	<typeAlias  alias="FileVO" type="egovframework.com.cmm.service.FileVO"/>
 
-	<resultMap id="fileList" class="framework.com.cmm.service.FileVO">
+	<resultMap id="fileList" class="egovframework.com.cmm.service.FileVO">
 		<result property="atchFileId" column="ATCH_FILE_ID" columnIndex="1"/>
 		<result property="fileCn" column="FILE_CN" columnIndex="2"/>
 		<result property="fileExtsn" column="FILE_EXTSN" columnIndex="3"/>
@@ -18,7 +18,7 @@
 		<result property="creatDt" column="CREAT_DT" columnIndex="9"/>			
 	</resultMap>
 
-	<resultMap id="fileDetail" class="framework.com.cmm.service.FileVO">
+	<resultMap id="fileDetail" class="egovframework.com.cmm.service.FileVO">
 		<result property="atchFileId" column="ATCH_FILE_ID" columnIndex="1"/>
 		<result property="fileCn" column="FILE_CN" columnIndex="2"/>
 		<result property="fileExtsn" column="FILE_EXTSN" columnIndex="3"/>

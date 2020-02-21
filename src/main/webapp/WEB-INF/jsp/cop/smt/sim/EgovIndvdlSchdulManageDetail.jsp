@@ -21,7 +21,7 @@
 <%
 String sLinkType = request.getParameter("linkType") == null ? "" : (String)request.getParameter("linkType");
 %>
-<c:set var="ImgUrl" value="/images/framework/cop/smt/sim/"/>
+<c:set var="ImgUrl" value="/images/egovframework/cop/smt/sim/"/>
 <c:set var="sLinkType" value="<%=sLinkType %>"/>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
