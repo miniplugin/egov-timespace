@@ -8,8 +8,8 @@
 
 >작업일자(아래): 20200221
 ### 연동 SW 점검 2. egov sht프로젝트에서 -> CMS프로젝트 CRUD 연동검사 OK.
-- egov 심플홈프로젝트 URL: http://도메인:포트/sht_webapp
-- CMS결과확인 URL: http://도메인:포트/sht_webapp/main/template/mainPage.do
+- egov 심플홈프로젝트 URL: http://sht.paas-ta.org/
+- [결과확인 URL](http://sht.paas-ta.org/main/template/mainPage.do): http://sht.paas-ta.org/main/template/mainPage.do
 
 ### [ScreenShot 아래 1)번 부터 ~ 8)번 까지 실행했음.]<br>
 ![ex_screenshot](./git_img/20200222.jpg)
