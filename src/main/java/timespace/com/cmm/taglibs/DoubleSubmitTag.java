@@ -13,7 +13,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import egovframework.com.cmm.util.EgovDoubleSubmitHelper;
+import timespace.miniplugin.com.EgovDoubleSubmitHelper;
 
 /**
  * TagSupport to support to double submit preventer

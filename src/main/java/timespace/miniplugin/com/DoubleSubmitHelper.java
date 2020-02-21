@@ -7,8 +7,6 @@ import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import egovframework.com.cmm.util.EgovDoubleSubmitHelper;
 /**
  * from HttpServletRequest to MultipartHttpServletRequest 확장 to double submit preventer
  * @author Vincent Han

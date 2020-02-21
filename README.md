@@ -6,8 +6,11 @@
 ***
 >작업일자(아래): 20200221
 ### 연동 SW 점검 2. egov sht프로젝트에서 -> CMS프로젝트 CRUD 연동검사 예정.
-- 결과확인 URL: http://도메인/main/template/mainPage.do
+- egov 심플홈프로젝트 URL: http://localhost:8080/sht_webapp
+- CMS결과확인 URL: http://도메인/main/template/mainPage.do
+
 ### 연동 SW 점검 1. 작업한 CMS에서 -> egov Sample프로젝트 CRUD 연동검사 OK.
+- 현재 Git 소스는 점검 결과가 적용된 소스 입니다. 원상복귀는 아래 스크린샷 7).번 부터 1).번까지 역순으로 처리하면 됩니다.
 - sample 프로젝트에서 validator폴더복사해서 CMS프로젝트에 추가.
 - context-validator.xml에서 Sample용 밸리데이터 설정 추가.(아래 스크린샷에서 7번에 딸린작업)
 ```xml
