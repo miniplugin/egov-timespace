@@ -17,27 +17,7 @@
 
 ### 연동 SW 점검 1. 작업한 CMS에서 -> egov Sample프로젝트 CRUD 연동검사 OK.
 - [결과확인 URL](https://egov-timespace.herokuapp.com/egovSampleList.do): https://egov-timespace.herokuapp.com/egovSampleList.do
-- 현재 Git 소스는 점검1. 결과가 적용된 소스 입니다. 원상복귀는 아래 스크린샷 7).번 부터 1).번까지 역순으로 처리하면 됩니다.
-- 8).누락분 내역 추가 : egov-com-servlet.xml
-
-```xml
-<mvc:interceptor>
-    <mvc:mapping path="/cop/com/*.do"/>
-    <mvc:mapping path="/cop/bbs/*Master*.do"/>
-    <mvc:mapping path="/uat/uia/*.do"/>
-    <mvc:mapping path="/uss/umt/mber/*.do"/>
-    <mvc:exclude-mapping path="/uat/uia/actionLogin.do"/>
-    <mvc:exclude-mapping path="/uat/uia/egovLoginUsr.do"/>
-    <!-- 연동 SW 점검 1. 때문에 추가 -->
-    <mvc:exclude-mapping path="/egovSampleList.do"/>
-    <mvc:exclude-mapping path="/addSample.do"/>
-    <mvc:exclude-mapping path="/updateSample.do"/>
-    <mvc:exclude-mapping path="/deleteSample.do"/>
-    
-    <bean class="egovframework.com.cmm.interceptor.AuthenticInterceptor" />
-</mvc:interceptor>
-```
-
+- 현재 Git 소스는 점검1. 결과가 적용된 소스 입니다. 원상복귀는 아래 스크린샷 8).번 부터 1).번까지 역순으로 처리하면 됩니다.
 - sample 프로젝트에서 validator폴더복사해서 CMS프로젝트에 추가.
 - context-validator.xml에서 Sample용 밸리데이터 설정 추가.(아래 스크린샷에서 7번에 딸린작업)
 ```xml
@@ -70,6 +50,25 @@ SET SCHEMA PUBLIC
 ```
 
 ### [ScreenShot 아래 1)번 부터 ~ 7)번 까지 실행했음.]<br>
+- 8).누락분 내역 추가 : egov-com-servlet.xml 파일 ...때문에 추가 부분
+
+```xml
+<mvc:interceptor>
+    <mvc:mapping path="/cop/com/*.do"/>
+    <mvc:mapping path="/cop/bbs/*Master*.do"/>
+    <mvc:mapping path="/uat/uia/*.do"/>
+    <mvc:mapping path="/uss/umt/mber/*.do"/>
+    <mvc:exclude-mapping path="/uat/uia/actionLogin.do"/>
+    <mvc:exclude-mapping path="/uat/uia/egovLoginUsr.do"/>
+    <!-- 연동 SW 점검 1. 때문에 추가 -->
+    <mvc:exclude-mapping path="/egovSampleList.do"/>
+    <mvc:exclude-mapping path="/addSample.do"/>
+    <mvc:exclude-mapping path="/updateSample.do"/>
+    <mvc:exclude-mapping path="/deleteSample.do"/>
+    
+    <bean class="egovframework.com.cmm.interceptor.AuthenticInterceptor" />
+</mvc:interceptor>
+```
 ![ex_screenshot](./git_img/20200221.jpg)
 ![ex_screenshot](./git_img/20200221_2.jpg)
 
